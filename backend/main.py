@@ -8,7 +8,7 @@ import pandas as pd
 from fastapi import FastAPI, HTTPException
 from fastapi.staticfiles import StaticFiles
 
-D = Path(os.getenv("DATA_DIR", Path(__file__).parent.parent / "data"))
+D = Path(os.getenv("DATA_DIR", Path(__file__).parent / "data"))
 LON = ZoneInfo("Europe/London")
 FIRST, LAST = date(2026, 1, 2), date(2026, 2, 1)  # delivery days for decisions made 1-31 Jan
 
